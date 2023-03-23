@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 4</title>
+
     <style>
-        img {
-            width: 200px;
+        thead td {
+            text-align: center;
         }
 
         table {
             margin: auto;
+            background-color: #eee;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        img {
+            width: 200px;
         }
     </style>
 </head>
@@ -20,27 +30,36 @@
 <body>
     <table border="1">
         <thead>
-            <th colspan="2">NIKE</th>
+            <tr>
+                <td colspan="2">DOMÉSTICOS</td>
+            </tr>
+
+            <tr>
+                <th>Gatos</th>
+                <th>Cachorros</th>
+            </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th>Camisetas</th>
-                <th>Calças</th>
+                <td>
+                    <img src="cat-1.png">
+                </td>
+                <td>
+                    <img src="dog-1.png">
+                </td>
             </tr>
 
             <tr>
-                <td><img src="camiseta-1.png" alt=""></td>
-                <td><img src="calça-1.png" alt=""></td>
-            </tr>
-
-            <tr>
-                <td><a href="https://www.nike.com.br"><img src="camiseta-2.png" alt="" target="_blank"
-                            title="Camisa dri-fit amarela"></a></td>
-                <td><a href="https://www.nike.com.br"><img src="calça-2.png" alt="" target="_blank"
-                            title="Calça tactel preta"></a></td>
+                <td>
+                    <img src="cat-2.png">
+                </td>
+                <td>
+                    <img src="dog-2.png">
+                </td>
             </tr>
         </tbody>
     </table>
+</body>
 
 </html>
