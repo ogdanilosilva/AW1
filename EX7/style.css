@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Raleway';
+    color: #EC4B6F;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+hr {
+    color: rgba(217,217,217,255);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    padding: 20px;
+}
+
+.banner img {
+    margin-left: 300px
+}
+
+.menu {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    height: 120px;
+    border-spacing: 40px;
+}
+
+.items a {
+    color: #EC4B6F;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.items a:hover {
+    text-decoration: underline;
+    color: #EC4B6F;
+}
+
+h1 {
+    color: #EC4B6F;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.layout {
+    width: 650px;
+    margin: auto;
+    border-spacing: 15px 0px;
+}
+
+.layout td {
+    background-color: #fff;
+}
+
+.layout img {
+    width: 300px;
+}
+
+.name-cat {
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 30px 0px 0px 20px;
+}
+
+.description-cat {
+    color: #6b6b6b;
+    font-family: Arial;
+    padding: 10px 0px 20px 20px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+button {
+    font-family: 'Pacifico';
+    width: 160px;
+    background-color: #fc9603;
+    border: 2px solid #fc9603;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;   
+}
