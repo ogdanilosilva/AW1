@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,115 +8,102 @@
     <link rel="stylesheet" href="style.css">
     <title>Danilo Silva</title>
 </head>
+
 <body>
+    <div class="logo">
+        <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+            <img src="logo.png" alt="logo" title="Governo de São Paulo">
+        </a>
+    </div>
 
-    <a href="https://www.saopaulo.sp.gov.br" target="_blank"><img src="logo.png"></a>
-    <h1>Dados Cadastrados</h1>
+    <div class="dados-cadastrados-container">
+        <div class="dados-cadastrados-content">
+            <h1>Dados cadastrados</h1>
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td>Danilo Silva</td>
+                </tr>
 
-    <table class="registration-data">
-        <tr>
-            <td>Nome:</td>
-            <td>Danilo Silva</td>
-        </tr>
+                <tr>
+                    <td>Prontuário</td>
+                    <td>SP3065219</td>
+                </tr>
 
-        <tr>
-            <td>Prontuário:</td>
-            <td>SP3065219</td>
-        </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>danilo.md050@gmail.com</td>
+                </tr>
 
-        <tr>
-            <td>Email:</td>
-            <td>danilo.md050@gmail.com</td>
-        </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td>17 anos</td>
+                </tr>
 
-        <tr>
-            <td>Idade:</td>
-            <td>17 anos</td>
-        </tr>
-        
-        <tr>
-            <td>Sexo:</td>
-            <td>Masculino</td>
-        </tr>
+                <tr>
+                    <td>Telefone</td>
+                    <td>(11) 95876-9543</td>
+                </tr>
 
-        <tr>
-            <td>Telefone:</td>
-            <td>(11) 95876-9543</td>
-        </tr>
+                <tr>
+                    <td>Endereço</td>
+                    <td>Avenida Desembargador Moreira</td>
+                </tr>
 
-        <tr>
-            <td>Endereço:</td>
-            <td>Avenida Desembargador Moreira</td>
-        </tr>
+                <tr>
+                    <td>Número</td>
+                    <td>37</td>
+                </tr>
 
-        <tr>
-            <td>Número:</td>
-            <td>37</td>
-        </tr>
+                <tr>
+                    <td>Complemento</td>
+                    <td>Bloco 5 apto 77</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-        <tr>
-            <td>Complemento:</td>
-            <td>Bloco 5 apto 77</td>
-        </tr>
-    </table>
+    <div class="cadastro-container">
+        <div class="cadastro-content">
+            <h1>Atualize os seus dados </h1>
+            <form action="">
+                <label for="">Nome
+                    <input type="text">
+                </label>
 
-    <h1>Atualize seus dados <br> em nosso sistema</h1>
+                <label for="">
+                    Prontuário
+                    <input type="text">
+                </label>
 
-    <table class="new-registration ">
-        <form>
-            <tr>
-                <td>Nome:</td>
-                <td><input type="text" name="nome" placeholder="Digite seu nome"></td>
-            </tr>
+                <label for="">Email
+                    <input type="mail">
+                </label>
 
-            <tr>
-                <td>Prontuário:</td>
-                <td><input type="text" name="prontuario" placeholder="Digite seu prontuário"></td>
-            </tr>
+                <label for="">Idade
+                    <input type="number">
+                </label>
 
-            <tr>
-                <td>Email:</td>
-                <td><input type="mail" name="email" placeholder="Digite seu email"> </td>
-            </tr>
+                <label for="">Telefone
+                    <input type="tel">
+                </label>
 
-            <tr>
-                <td>Idade:</td>
-                <td><input type="text" name="idade" placeholder="Digite sua idade"></td>
-            </tr>
+                <label for="">Endereço
+                    <input type="text">
+                </label>
 
-            <tr>
-                <td>Sexo:</td>
-                <td>
-                    <input type="radio" name="sex"> Masculino
-                    <input type="radio" name="sex"> Feminino
-                    <input type="radio" name="sex"> Outro
-                </td>
-            </tr>
+                <label for="">Número
+                    <input type="number">
+                </label>
 
-            <tr>
-                <td>Telefone:</td>
-                <td><input type="tel" name="telefone" placeholder="Digite seu telefone"></td>
-            </tr>
+                <label for="">Complemento
+                    <input type="text">
+                </label>
 
-            <tr>
-                <td>Endereço:</td>
-                <td><input type="mail" name="text" placeholder="Digite seu endereço"> </td>
-            </tr>
-
-            <tr>
-                <td>Número:</td>
-                <td><input type="tel" name="telefone" placeholder="Digite o número da residência"></td>
-            </tr>
-
-            <tr>
-                <td>Complemento:</td>
-                <td><input type="mail" name="text" placeholder="Digite o complemeto"> </td>
-            </tr>
-
-            <tr>
-                <td><button type="submit">Enviar</button></td>
-            </tr>
-        </form>
-    </table>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
