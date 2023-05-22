@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ccc;
+    background-color: #000;
 }
 
 .header {
@@ -16,15 +16,15 @@ body {
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
     padding: 20px 100px;
 }
 
 .logo {
-    color: #000;
+    color: #fff;
     font-weight: 600px;
     font-size: 32px;
 }
@@ -34,22 +34,17 @@ body {
 }
 
 .navbar a {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     padding: 10px 20px;
     font-weight: 500;
-}
-
-.navbar a:hover {
-    color: #00f;
-    transition: 0.4s;
 }
 
 section {
     padding: 70px 250px;
 }
 
-.home {
+#home {
     width: 100%;
     min-height: 90vh;
     display: grid;
@@ -60,40 +55,35 @@ section {
 
 .home-img img {
     min-width: 100%;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 
 .home-text h1 {
     font-size: 28px;
-    color: #00f;
+    color: #fff;
 }
 
 .home-text h2 {
+    color: #ddd;
     font-size: 20px;
-    margin: 16px 32px;
+    margin: 15px 20px;
 }
 
-.heading {
+.heading h1 {
     text-align: center;
+    margin: 30px 0px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
 }
 
-.heading span {
-    color: #00f;
-    font-weight: 600;
-}
-
-.heading h2 {
-    font-size: 20px;
-}
-
-.menu-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     grid-gap: 24px;
     align-items: center;
 }
-
 
 .box {
     position: relative;
@@ -103,13 +93,12 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ddd;
     border-radius: 10px;
 }
 
 .box-img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
 }
 
 .box-img img {
@@ -118,18 +107,36 @@ section {
 }
 
 .box h2 {
+    color: #fff;
     font-size: 20px;
+    margin: 30px 0px 5px;
 }
 
 .box h3 {
-    color: #00f;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 15px;
     font-weight: 500;
-    margin: 4px 0px 10px;
+    margin: 20px 0px 16px;
 }
 
-.box span {
-    font-size: 18px;
-    color: #f00;
-    font-weight: 600;
+.box p {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.4s;
 }
