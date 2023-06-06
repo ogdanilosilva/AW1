@@ -14,3 +14,32 @@ h1 {
     color: #ff0b0b;
     padding: 20px;
 }
+
+.navbar {
+    display: flex;
+    list-style: none;
+ 
+}
+
+.navbar a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 35px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #eee;
+}
+
+.noticie-container {
+    display: flex;
+}
+
+.noticie-img img {
+    width: 250px;
+}
