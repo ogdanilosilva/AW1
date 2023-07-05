@@ -1,0 +1,92 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 2px 2px;
+}
+
+ul a {
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #ff0000;
+}
+
+ul a {
+    border: 1px solid #ff0000;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url(images/menu.png) no-repeat left bottom;
+    font-size: 1.0rem;
+    transition: 0.4s;
+}
+
+a:hover {
+    background-position: right bottom;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.menu-horizontal ul li {
+    float: left;
+}
+
+.menu-horizontal ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: #a500a5;
+    transition: 0.4s;
+    border: 2px solid rgb(0, 60, 255);
+}
+
+.menu-horizontal ul a:hover {
+    color: #a500a5;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+img {
+    width: 300px;
+}
+
+.div-2 img {
+    height: 200px;
+}
