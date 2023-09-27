@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área de Circunferência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Área de Circunferência</h1>
+        <p>Digite o raio da circunferência:</p>
+        <input type="number" id="raio" placeholder="Digite o raio">
+        <button onclick="calcularArea()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcularArea() {
+            var raio = parseFloat(document.getElementById("raio").value);
+
+            if (!isNaN(raio) && raio >= 0) {
+                var area = Math.PI * Math.pow(raio, 2);
+                document.getElementById("resultado").textContent = "A área da circunferência é: " + area.toFixed(2);
+            } else {
+                document.getElementById("resultado").textContent = "Por favor, digite um valor válido para o raio.";
+            }
+        }
+    </script>
+</body>
+</html>

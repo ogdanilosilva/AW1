@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Verificador de Números</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Verificador de Números</h1>
+        <p>Digite um número inteiro:</p>
+        <input type="number" id="numero" placeholder="Digite o número">
+        <button onclick="verificarNumero()">Verificar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function verificarNumero() {
+            var numero = parseInt(document.getElementById("numero").value);
+
+            if (numero > 0) {
+                document.getElementById("resultado").textContent = "Valor Positivo";
+            } else if (numero < 0) {
+                document.getElementById("resultado").textContent = "Valor Negativo";
+            } else {
+                document.getElementById("resultado").textContent = "Igual a Zero";
+            }
+        }
+    </script>
+</body>
+
+</html>

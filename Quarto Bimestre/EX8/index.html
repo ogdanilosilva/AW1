@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dia da Semana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dia da Semana</h1>
+        <p>Digite um número de 1 a 7:</p>
+        <input type="number" id="numero" placeholder="Digite o número">
+        <button onclick="exibirDiaDaSemana()">Exibir Dia</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function exibirDiaDaSemana() {
+            var numero = parseInt(document.getElementById("numero").value);
+
+            switch (numero) {
+                case 1:
+                    document.getElementById("resultado").textContent = "Domingo";
+                    break;
+                case 2:
+                    document.getElementById("resultado").textContent = "Segunda-feira";
+                    break;
+                case 3:
+                    document.getElementById("resultado").textContent = "Terça-feira";
+                    break;
+                case 4:
+                    document.getElementById("resultado").textContent = "Quarta-feira";
+                    break;
+                case 5:
+                    document.getElementById("resultado").textContent = "Quinta-feira";
+                    break;
+                case 6:
+                    document.getElementById("resultado").textContent = "Sexta-feira";
+                    break;
+                case 7:
+                    document.getElementById("resultado").textContent = "Sábado";
+                    break;
+                default:
+                    document.getElementById("resultado").textContent = "Número inválido. Digite um número de 1 a 7.";
+            }
+        }
+    </script>
+</body>
+</html>

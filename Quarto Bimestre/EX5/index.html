@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encontrar Maior e Menor Número</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Encontrar Maior e Menor Número</h1>
+        <p>Digite o primeiro número:</p>
+        <input type="number" id="numero1" placeholder="Digite o primeiro número">
+        <p>Digite o segundo número:</p>
+        <input type="number" id="numero2" placeholder="Digite o segundo número">
+        <p>Digite o terceiro número:</p>
+        <input type="number" id="numero3" placeholder="Digite o terceiro número">
+        <button onclick="encontrarMaiorMenor()">Encontrar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function encontrarMaiorMenor() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var numero3 = parseFloat(document.getElementById("numero3").value);
+
+            var maior = Math.max(numero1, numero2, numero3);
+            var menor = Math.min(numero1, numero2, numero3);
+
+            document.getElementById("resultado").textContent = "Maior número: " + maior + " | Menor número: " + menor;
+        }
+    </script>
+</body>
+
+</html>

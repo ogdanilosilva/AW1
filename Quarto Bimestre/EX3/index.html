@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ordenador de Valores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ordenador de Valores</h1>
+        <p>Digite o valor A:</p>
+        <input type="number" id="valorA" placeholder="Digite o valor A">
+        <p>Digite o valor B:</p>
+        <input type="number" id="valorB" placeholder="Digite o valor B">
+        <button onclick="ordenarValores()">Ordenar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function ordenarValores() {
+            var valorA = parseInt(document.getElementById("valorA").value);
+            var valorB = parseInt(document.getElementById("valorB").value);
+
+            if (valorA < valorB) {
+                document.getElementById("resultado").textContent = valorA + " " + valorB;
+            } else {
+                document.getElementById("resultado").textContent = valorB + " " + valorA;
+            }
+        }
+    </script>
+</body>
+
+</html>
